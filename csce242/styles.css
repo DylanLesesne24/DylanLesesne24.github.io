@@ -1,0 +1,21 @@
+/*Structure*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:url("background2.jpg"); 
+    background-size:cover;
+}
+
+/*Typography*/
+h1 {
+    color:skyblue
+}
+
+h2 {
+    color:skyblue
+}
+
+/* Link changes*/
+a {
+    color: skyblue;
+    text-decoration: none
+}
