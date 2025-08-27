@@ -1,0 +1,48 @@
+/*Structure*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:url("images/background1.jpg");
+    background-size:cover;
+}
+
+#content {
+    background:#BFD1D9;
+    width:70%
+    padding:1%;
+    border-radius:5px;
+}
+
+/*Tables*/
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border:1px solid black;
+    padding:5px 10px;
+}
+
+th {
+    background: skyblue;
+}
+
+/*Images*/
+#cpu-pic {
+    box-shadow: 7px 7px #9BB1BF;
+
+}
+
+#cpu-pic2 {
+    box-shadow: 7px 7px #9BB1BF;
+
+}
+
+
+/*Typography*/
+h1 {
+    color:#9BB1BF;
+}
+
+h2 {
+    color:#9BB1BF;
+}
