@@ -1,0 +1,166 @@
+/* Structure */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  background-color: #73000a;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+section div {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Section Variants */
+.dark-section {
+  background-color: #000000;
+  color: white;
+}
+
+.red-section {
+  background-color: #73000a;
+  color: white;
+}
+
+.red-section .button {
+  background-color: #000000; /* Black button for Prepared for the Future */
+}
+
+.blue-section {
+  background-color: #1f4e5f;
+  color: white;
+}
+
+/* Special image styling for Impacting S.C. and Beyond */
+.dark-section img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Mid-Footer Section */
+.mid-footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mid-footer h2 {
+  color: #73000a;
+}
+
+.mid-footer .button {
+  background-color: #000000;
+  margin: 10px 0;
+}
+
+.social-icons img {
+  margin: 0 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #73000a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer div {
+  margin: 10px;
+}
+
+/* Buttons */
+button, a.button {
+  display: inline-block;
+  background-color: #73000a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* News Section */
+.news {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news div {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Legal Footer */
+.legal-footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.legal-footer p {
+  margin: 0;
+}
+
+.legal-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.legal-footer a:hover {
+  text-decoration: underline;
+}

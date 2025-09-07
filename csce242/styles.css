@@ -14,8 +14,8 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* Container for assignments*/ 
-#assignments {
+/* Container for assignments and projects */ 
+#assignments, #projects {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -24,9 +24,8 @@ h1, h2, h3 {
     max-width: 1000px;
 }
 
-/* Individual assignment box */
-
-.assignment-box { 
+/* Shared box style for assignments and projects */
+.assignment-box, .project-box { 
     background: rgba(255, 255, 255, 0.85);
     border: 2px solid skyblue;  
     border-radius: 8px;
@@ -37,8 +36,8 @@ h1, h2, h3 {
     transition: 0.3s ease;
 }
 
-/* Image inside each box */
-.assignment-box img { 
+/* Images inside boxes */
+.assignment-box img, .project-box img { 
     max-width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -49,4 +48,3 @@ h3 a {
     text-decoration: none;
     color: inherit;        
 }
-
