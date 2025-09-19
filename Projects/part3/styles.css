@@ -182,8 +182,10 @@ h2 {
 
 /* Playing with positioning */
 #main-logo {
-    position: absolute;
-    left: 50px;
+    height: 50px;   /* force it to be the same size as the old filler */
+    width: auto;    /* keeps aspect ratio */
+    margin-left: 1rem;
+    position: relative; /* so it's not pinned awkwardly */
 }
 
 /* Navigation */
@@ -453,6 +455,7 @@ footer p {
     background: var(--white);
     border-radius: 5px;
     box-shadow: 3px 3px var(--light-gray);
+    text-align: center; /* Centered content */
 }
 
 .guide-card img {
@@ -463,11 +466,13 @@ footer p {
 
 .guide-card h3 {
     margin: 0.5rem 0;
+    text-align: center;
 }
 
 .guide-card p {
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: center; /* Centered text */
 }
 
 /* Build Your PC Page */
@@ -554,5 +559,28 @@ footer p {
 .spec-list li {
     margin: 0.5rem 0;
     font-size: 1rem;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .pc-showcase {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pc-showcase img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .pc-details {
+    text-align: center;
+  }
+
+  .pc-details ul {
+    text-align: center;
+  }
 }
 

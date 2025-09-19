@@ -1,0 +1,110 @@
+/* Structure */
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #f4f5ef;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+header h1 {
+    margin: 0;
+    color: #49727c;
+}
+
+.subtitle {
+    color: #d86b6b;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #49727c;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    color: #aaa;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Sections */
+.content {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Plant Result */
+#plant-result {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #49727c;
+}
+
+/* Digital Clock */
+.clock-title {
+    font-weight: bold;
+    color: #49727c;
+}
+
+#digital-clock {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Responsive Menu: Small Screens */
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 5px 0;
+    }
+}
