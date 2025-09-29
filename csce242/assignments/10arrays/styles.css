@@ -1,0 +1,95 @@
+/* Structure */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Typography */
+h1 {
+    color: #46657c;
+}
+
+h2 {
+    color: #d27b7b;
+}
+
+/* Gallery Cards */
+.cat-card {
+    position: relative;
+    border: 4px solid #e39ca2;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 180px;
+    cursor: pointer;
+}
+
+.cat-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Overlay Message */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(226, 100, 100, 0.85);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cat-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Popup */
+#popup {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+/* Hidden State */
+.hidden {
+    display: none !important;
+}
+
+/* Popup Content */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    width: 300px;
+}
+
+#popup img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Close Button */
+#close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10 - Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Assignment 10</h1>
+        <h2>Arrays</h2>
+
+        <section class="gallery">
+            <div class="cat-card" data-name="Kira">
+                <img src="images/cat1.png" alt="Cat Kira">
+                <div class="overlay">Please adopt Kira</div>
+            </div>
+            <div class="cat-card" data-name="Phoenix">
+                <img src="images/cat2.png" alt="Cat Phoenix">
+                <div class="overlay">Please adopt Phoenix</div>
+            </div>
+            <div class="cat-card" data-name="Midnight">
+                <img src="images/cat3.png" alt="Cat Midnight">
+                <div class="overlay">Please adopt Midnight</div>
+            </div>
+            <div class="cat-card" data-name="Sunny">
+                <img src="images/cat4.png" alt="Cat Sunny">
+                <div class="overlay">Please adopt Sunny</div>
+            </div>
+        </section>
+
+        <p class="credit">
+            All images taken from <a href="https://pawp.com/photos-of-cats-before-and-after-adoption/" target="_blank">Pawp</a><br>
+            @dylanlesesne.com
+        </p>
+    </main>
+
+    <!-- Popup -->
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <span id="close">&#10006;</span>
+            <h3 id="popup-title"></h3>
+            <img id="popup-image" src="" alt="Adopted cat">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -620,3 +620,20 @@ footer p {
   }
 }
 
+#beginner-videos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video-grid iframe {
+    max-width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
