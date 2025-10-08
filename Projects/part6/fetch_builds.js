@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const jsonUrl = "https://raw.githubusercontent.com/DylanLesesne24/DylanLesesne24.github.io/main/Projects/part6/builds.json";
 
@@ -9,12 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   fetch(jsonUrl)
-    .then(response => {3
+    .then(response => {
       if (!response.ok) throw new Error("Network response not OK: " + response.status);
       return response.json();
     })
     .then(data => {
-
       let grid = prebuiltSection.querySelector(".pc-grid");
       if (!grid) {
         grid = document.createElement("div");
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         prebuiltSection.appendChild(grid);
       }
 
-    
       grid.innerHTML = "";
 
       data.forEach(item => {
@@ -32,14 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = item.img_name;
         img.alt = item.title;
+        // fallback if image fails to load
+        img.onerror = () => {
+          console.warn("Image failed to load:", item.img_name);
+          img.src = "images/placeholder-300x200.jpg"; // make sure you have a local placeholder
+        };
         card.appendChild(img);
 
         const h3 = document.createElement("h3");
         const a = document.createElement("a");
-    
+
         if (item._id === 1) a.href = "intel-build.html";
         else if (item._id === 2) a.href = "ryzen-build.html";
         else a.href = "#";
+
         a.textContent = `${item.title} — ${item.price}`;
         h3.appendChild(a);
         card.appendChild(h3);
@@ -61,6 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         grid.appendChild(card);
       });
+
+      console.log("Loaded", data.length, "build items from JSON.");
     })
     .catch(err => {
       console.error("Error loading builds JSON:", err);
