@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const jsonUrl = "https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/builds.json";
+  const jsonUrl = "https://raw.githubusercontent.com/DylanLesesne24/DylanLesesne24.github.io/main/Projects/part6/builds.json";
 
   const prebuiltSection = document.getElementById("prebuilt");
   if (!prebuiltSection) {
