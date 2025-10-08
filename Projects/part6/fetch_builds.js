@@ -29,10 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = item.img_name;
         img.alt = item.title;
-        // fallback if image fails to load
         img.onerror = () => {
           console.warn("Image failed to load:", item.img_name);
-          img.src = "images/placeholder-300x200.jpg"; // make sure you have a local placeholder
+          img.src = "images/placeholder-300x200.jpg"; 
         };
         card.appendChild(img);
 
