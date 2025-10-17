@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your PC - We Build PCs!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img id="main-logo" src="images/logo.jpg" alt="Logo">
+            <h1>We Build PCs!</h1>
+            <nav id="main-nav">
+                <ul id="nav-items" class="columns">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="buildyourpc.html">Build Your PC</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="builder">
+                <h2>Build Your PC</h2>
+                <p class="intro">
+                    Use the dropdown menus below to choose your components. Once selected,
+                    your build summary will appear in the preview box.
+                </p>
+
+                <div class="builder-grid">
+
+                    <div class="builder-card">
+                        <h3>CPU</h3>
+                        <select>
+                            <option>Select CPU</option>
+                            <option>Intel i5</option>
+                            <option>Intel i7</option>
+                            <option>Ryzen 5</option>
+                            <option>Ryzen 7</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-card">
+                        <h3>GPU</h3>
+                        <select>
+                            <option>Select GPU</option>
+                            <option>NVIDIA RTX 3060</option>
+                            <option>NVIDIA RTX 3070</option>
+                            <option>AMD RX 6700 XT</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-card">
+                        <h3>RAM</h3>
+                        <select>
+                            <option>Select RAM</option>
+                            <option>8GB DDR4</option>
+                            <option>16GB DDR4</option>
+                            <option>32GB DDR5</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-card">
+                        <h3>Motherboard</h3>
+                        <select>
+                            <option>Select Motherboard</option>
+                            <option>ATX</option>
+                            <option>Micro-ATX</option>
+                            <option>Mini-ITX</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-card">
+                        <h3>Storage</h3>
+                        <select>
+                            <option>Select Storage</option>
+                            <option>500GB SSD</option>
+                            <option>1TB SSD</option>
+                            <option>2TB HDD</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-card">
+                        <h3>Power Supply</h3>
+                        <select>
+                            <option>Select Power Supply</option>
+                            <option>500W</option>
+                            <option>650W</option>
+                            <option>750W</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section id="preview">
+                <h2>Your Build Preview</h2>
+                <div class="preview-box">
+                    <p>Selected components will appear here.</p>
+                </div>
+
+                <button id="build-btn">Build</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Dylan Lesesne</p>
+        </footer>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>

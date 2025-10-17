@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Contact Us - We Build PCs!</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="main-logo" src="images/logo.jpg" alt="Logo">
+            <h1>We Build PCs!</h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="buildyourpc.html">Build Your PC</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+
+        <main id="contact">
+            <div class="contact-columns">
+                <section class="one">
+                    <h3>Our Location</h3>
+                    <iframe
+                        id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6616.06598204007!2d-81.02688852399209!3d33.99290197313709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bad83e84d8df%3A0x66f7fe71b3a65949!2s1100%20Wheat%20St%2C%20Columbia%2C%20SC%2029201!5e0!3m2!1sen!2sus!4v1737069000000!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+
+                <section class="one">
+                    <form method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p> 
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </p>
+                        
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <p><button type="submit">Submit Form</button></p>
+                        <div id="contact-result"></div>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+</html>

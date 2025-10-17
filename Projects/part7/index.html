@@ -1,0 +1,60 @@
+<!-- grader note: Page to check -> index.html. Data loaded: pre-built PC builds from builds.json -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Build PCs!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="main-logo" src="images/logo.jpg" alt="Logo">
+            <h1>We Build PCs!</h1>
+            <nav id="main-nav">
+                <ul id="nav-items" class="columns">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="buildyourpc.html">Build Your PC</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <h2>Your One Stop PC Building Resource!</h2>
+                <p>Browse pre-built PCs or start learning how to build your own.</p>
+                <img src="images/headerimage.jpg" alt="Hero Banner">
+            </section>
+
+            <section id="prebuilt">
+                <h2>Pre-Built PCs</h2>
+                <div class="pc-grid">
+                    <article class="pc-card">
+                        <img src="images/intelpc.jpg" alt="Intel PC">
+                        <h3><a href="intel-build.html">Intel PC – $1300</a></h3>
+                        <p>Intel i5 | 16GB RAM | RTX 3060 | 512GB SSD</p>
+                    </article>
+                    <article class="pc-card">
+                        <img src="images/ryzenpc.jpg" alt="Ryzen PC">
+                        <h3><a href="ryzen-build.html">Ryzen PC – $1450</a></h3>
+                        <p>Ryzen 5 | 16GB RAM | RTX 3070 | 1TB SSD</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Dylan Lesesne</p>
+            <p style="font-size:0.85rem; margin-top:0.25rem;">Image credits: Newegg, Micro Center, and Pexels (royalty-free) — see images/ for sources.</p>
+        </footer>  
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="fetch_builds.js"></script>
+</body>
+</html>
